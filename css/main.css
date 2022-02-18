@@ -97,12 +97,12 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: lightcyan;
   height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
@@ -110,26 +110,36 @@ body {
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  font-weight: 400;
   display: flex;
   justify-content: space-between;
 }
 
+.wrapper span {
+    font-family: 'Lora', serif;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: darkslategray;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1.3em;
+  text-align: center;
+  background-color: lightcyan;
   height: 300px;
-  width: 30%;
+  width: 33.3%;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-
+.div-1, .div-2 {
+    border-right: 2px double darkslategray;
+}
 
 /* ==========================================================================
    Helper classes
