@@ -97,48 +97,82 @@ textarea {
 
 
 html {
-  background-color: lightcyan;
-  height: 100%;
+    background-color: #154B52;
+    height: 100%;
+    width: 100%;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  padding: 2em;
+  padding: 0em 2em;
   font-size: 1.25em;
-  height: 100%;
-}
-
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 400;
+  color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.wrapper span {
+.flex-container {
+    /*add display:flex and set justify-content to space-between*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+p span {
+    font-family: 'Lora', serif;
+    font-size: 1.3em;
+}
+
+header,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px double white;
+}
+
+main p {
+    font-size: 1.35em;
+}
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+#div-2,
+#div-3 {
+    border-left: 1px solid white;
+    padding-left: 1em;
+}
+.flex-items span {
     font-family: 'Lora', serif;
     font-size: 1.4em;
     line-height: 1.5em;
 }
 
-
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: darkslategray;
-  line-height: 1.5em;
-  font-size: 1.3em;
-  text-align: center;
-  background-color: lightcyan;
-  height: 300px;
-  width: 33.3%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer {
+    border-top: 3px double white;
 }
 
-.div-1, .div-2 {
-    border-right: 2px double darkslategray;
+footer .logo {
+    padding: 0.5em 0 0.5em;
 }
 
 /* ==========================================================================
